@@ -184,6 +184,132 @@ body {
     object-fit: cover;
 }
 
+ul{
+    width: 100%;
+    height: fit-content;
+    /* background-color: #e5486d; */
+    list-style: none;
+    padding: 0 0 0 1vw ;
+    margin: 2vh 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+
+}
+
+li{
+    /* background-color: #fbfbfb; */
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.common-lists li.parent-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: none;
+}
+
+.parent-list-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parent-list-header button{
+    background-color: var(--white);
+    border: none;
+    width: 3vh;
+    /* overflow: hidden; */
+    height: 3vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent-list-header button img{
+    width: auto;
+    height: 55%;
+    /* background-color: #111111; */
+    object-fit: contain;
+    opacity: 0.8;
+    filter: invert(1);
+}
+
+.parents-childrens{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 1vw ;
+    gap: 0;
+}
+
+.parents-childrens li{
+    position: relative;
+    height: fit-content;
+    padding: 0.6vh 0;
+}
+
+.parents-childrens li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -1vw;
+    border-left: 2px solid #a2a5b5;
+    width: 1px;
+    height: 100%;
+}
+
+.parents-childrens li::after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid #a2a5b5;
+    top: 50%;
+    left: -1vw;
+    width: 0.8vw;
+  }
+
+.expanded-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.expandable-list .button{
+    font-weight: 600;
+    width: 100%;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh 0 0 0;
+    padding:0.4vh 0;
+    border: none;
+}
+
+.expandable-list .button span {
+    font-weight: 600;
+}
+
+.expandable-list .button img{
+    width: auto;
+    height: 55%;
+    max-height: 2vh;
+    /* background-color: #111111; */
+    object-fit: contain;
+    opacity: 0.8;
+    filter: invert(0);
+}
+
+
+
 /* Main */
 .main {
     flex: 1;
