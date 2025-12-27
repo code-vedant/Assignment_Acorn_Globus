@@ -434,11 +434,146 @@ li{
 
 
 .main_section{
-    padding: 0 1vw;
-    height: 100%;
+    padding: 3vh 1vw;
+    height: calc(100% - 7vh);
     overflow-y: auto;
     background-color: var(--bg-main);
     border-radius: 4vh;
+}
+
+.report-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* background-color: #b12323; */
+    height: fit-content;
+    min-height: 4vh;
+}
+
+.header-users{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    padding: 0 1vw;
+    /* background-color: #f2eeee; */
+}
+
+.add-more-btn{
+    background-color: var(--white);
+    border: none;
+    width: 4vh;
+    height: 4vh;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #0000002f;
+}
+
+.add-more-btn img{
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.header-users ul.user-list-tab{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 1vw;
+    list-style: none;
+    /* background-color: #bc98a1; */
+    padding: 0;
+    margin: 0;
+}
+
+.user-tab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.2vw;
+    background-color: var(--white);
+    padding: 0.5vh 0.3vw;
+    border-radius: 2vh;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8em;
+    border: 1px solid #0000002f;
+}
+
+.user-tab img{
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8em;
+    border: 1px solid var(--bg);
+}
+
+.header-users button.logo-button{
+    background: var(--white);
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #0000002f;
+}
+
+.header-users button.logo-button div{
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    background-color: var(--dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.headers-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    padding: 0 1vw;
+}
+
+.action-btn{
+    background-color: var(--white);
+    border: none;
+    width: 4vh;
+    height: 4vh;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #0000002f;
+}
+
+.action-btn img{
+    height: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    filter: invert(0);
 }
 
 /* Stats */
