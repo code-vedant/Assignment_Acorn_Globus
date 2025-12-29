@@ -9,6 +9,8 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
@@ -656,3 +658,87 @@ li{
     outline: none;
     background-color: var(--bg);
   }
+
+  .revenue-section{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .total-revenue-container{
+    background-color: none;
+    width: fit-content;
+    max-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2vh;
+  }
+
+  .total-revenue-container h4{
+    margin: 0;
+    font-size: 1rem;
+    color: var(--dark);
+    font-weight: 600;
+  }
+
+  .total-revenue{
+    display: flex;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.4vw;
+  }
+
+  .total-revenue .red-tag{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.3vh 0.6vw;
+    font-size: 0.7rem;
+    border-radius: 1vw;
+  }
+
+  .total-revenue .red-tag img{
+    width: 60%;
+    height: 60%;
+    max-width: 0.5rem;
+    object-fit: cover;
+    filter: invert(1);
+  }
+
+    .total-revenue h3{
+        margin: 0;
+        font-size: 1.7rem;
+        color: var(--dark);
+        opacity:1;
+        font-weight: 700;
+    }
+
+    .total-revenue h3 span{
+        opacity: 0.5;
+    }
+
+    .revenue-comparison{
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .revenue-comparison p{
+        margin: 0;
+        font-size: 0.8rem;
+        color: var(--dark);
+    }
+
+    .revenue-comparison select{
+        height: 3vh;
+        border: none;
+        background-color: transparent;
+        padding: 0 0.5vw;
+        outline: none;
+    }
